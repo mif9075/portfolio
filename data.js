@@ -1,3 +1,11 @@
+const certification =[
+    {
+        organization: 'ASCP',
+        title: 'Certified Laboratory Technologist',
+    }
+]
+
+
 const education = [
     {
         address: '630 Ninth Ave, Ste 901, New York, NY 10036',
@@ -19,6 +27,7 @@ const education = [
     }
 
 ]
+
 
 const experience = [
     {
