@@ -56,3 +56,10 @@ const experience = [
         year: 'March 2003 - September 2006'
     }
 ]
+
+
+const programming_languages = [
+    {language: CSS},
+    {language: HTML},
+    {language: Javascript},
+]
