@@ -1,12 +1,9 @@
 window.onload = init;
 
-
-
-
-
-
-
 function init(){
+
+addClick('#projects', projectAll);
+
 for (let i = 0; i < education.length; i++){
     displayEducation(education[i]);
 }
@@ -25,6 +22,14 @@ displayskills();
 }
 
 //Helper Functions
+function addClick(selector, func){
+    document.querySelector(selector)
+        .addEventListener('click', func);
+}
+function projectAll(event){
+    event.preventDefault();
+}
+
 function displayBio(){
     const bioUl = document.querySelector('#bio');
 
@@ -44,6 +49,7 @@ function displayBio(){
     bioData.appendChild(city);
 
     document.getElementById("bio").style.fontSize = "large";
+
 }
 
 function displayIntro(){
@@ -61,6 +67,7 @@ function displayIntro(){
     introData.appendChild(intro2);
 
     document.getElementById("intro").style.fontSize = "large";
+    
 
 }
 
