@@ -1,31 +1,61 @@
-
-
-//Intro
-const intro = [
+const data =[
     {
-    objective: '',  
-    profile: '',
-    summary: 'Web developer student at Code Immersives.',
-    summary2: 'Experienced in HTML, CSS, Flexbox, Gridbox and Javascript.'
-}
-]
-
-const career_summary = [
-    {},
-]
-
-
-//Contact
-const contact = [
+        id: 'intro',
+        objective: '',  
+        profile: '',
+        summary: 'Web developer student at Code Immersives.',
+        summary2: 'Experienced in HTML, CSS, Flexbox, Gridbox and Javascript.'
+    },
     {
-    name: 'Miguel A. Fernandez',
-    address: '43 Bella Vista Avenue',
-    city: 'Saddle Brook, NJ 07663',
-    email: 'mferna@outlook.com',
-    github: 'https://github.com/mif9075',
-    phone: '347-453-6989'
+        id: 'career_summary'},
+    {
+        id: 'contact',
+        name: 'Miguel A. Fernandez',
+        address: '43 Bella Vista Avenue',
+        city: 'Saddle Brook, NJ 07663',
+        email: 'mferna@outlook.com',
+        github: 'https://github.com/mif9075',
+        phone: '347-453-6989'
+    },
 
-}
+    
+    {
+        id: 'volunteer'
+    },
+    {
+        id: 'skills',
+        skill: ''
+    },
+    {
+        id: 'publications'
+    },
+    {
+        id: 'certifications',
+        organization: 'ASCP',
+        title: 'Certified Laboratory Technologist',
+    },
+    {
+        id: 'courses'
+    },
+    {
+        id: 'honors_awards'
+    },
+    {
+        id: 'languages',
+        language: 'English',
+        language2: 'Spanish'
+    },
+    {
+        id: 'organizations'
+    },
+    {
+        id: 'projects'
+    },
+    {
+        id: 'programming_languages',
+        language: 'CSS',
+        language2: 'HTML',
+        language3: 'Javascript'},
 ]
 
 //Background
@@ -92,51 +122,4 @@ const education = [
 
 ]
 
-const volunteer = [
-    {}
-]
-
-//Skills
-const skills = [
-    {skill: ''}
-]
-
-//Accomplishments
-const publications = [
-    {}
-]
-
-const certifications = [
-    {
-        organization: 'ASCP',
-        title: 'Certified Laboratory Technologist',
-    }
-]
-
-const courses = [
-    {}
-]
-
-const honors_awards = [
-    {}
-]
-
-const languages = [
-    {language: 'English'},
-    {language: 'Spanish'}
-]
-
-const organizations = [
-    {}
-]
-
-const projects = [
-    {}
-]
-
-const programming_languages = [
-    {language: CSS},
-    {language: HTML},
-    {language: Javascript},
-]
 
