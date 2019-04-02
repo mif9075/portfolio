@@ -1,9 +1,12 @@
+
+
 //Intro
 const intro = [
     {
     objective: '',  
     profile: '',
-    summary: ''
+    summary: 'Web developer student at Code Immersives.',
+    summary2: 'Experienced in HTML, CSS, Flexbox, Gridbox and Javascript.'
 }
 ]
 
@@ -19,7 +22,9 @@ const contact = [
     address: '43 Bella Vista Avenue',
     city: 'Saddle Brook, NJ 07663',
     email: 'mferna@outlook.com',
+    github: 'https://github.com/mif9075',
     phone: '347-453-6989'
+
 }
 ]
 
@@ -29,6 +34,7 @@ const experience = [
         employer: 'New York Presbyterian Hospital',
         title: 'Blood Bank',
         year: 'September 2014 - Present',
+        location: 'New York, NY',
         responsibilities: '',
         achievements: ''
     },
@@ -36,6 +42,7 @@ const experience = [
         employer: 'North Shore University Hospital',
         title: 'Blood Bank',
         year: 'February 2012 - August 2014',
+        location: 'Manhasset, NY',
         responsibilities: '',
         achievements: ''
     },
@@ -132,3 +139,4 @@ const programming_languages = [
     {language: HTML},
     {language: Javascript},
 ]
+
