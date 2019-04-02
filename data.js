@@ -63,4 +63,39 @@ const education = [
     },
 ]
 
+const project = [
+    {
+        name: 'Basic Javascript Page',
+    },
+    {
+        name: 'Boston Red Sox Book',
+    },
+    {
+        name: 'Boostrap Title Case'
+    },
+    {
+        name: 'Bucket List',
+    },
+    {
+        name: 'Portfolio',
+    },
+    {
+        name: 'Just How we roll'
+    },
+    {
+        name: 'Multicalc'
+    },
+    {
+        name: 'the Input Game'
+    },
+    {
+        name: 'ToDone',
+    },
+    {
+        name: 'Velcro',
+    },
+    {
+        name: '2do'
+    }
 
+]

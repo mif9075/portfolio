@@ -28,6 +28,22 @@ function addClick(selector, func){
 }
 function projectAll(event){
     event.preventDefault();
+    clearList();
+    
+}
+
+function clearList(){
+    event.preventDefault();
+    removeAllChildrenOfOl();
+}
+
+function removeAllChildrenOfOl() {
+
+    const ul = document.querySelector('aside');
+
+    while(ul.hasChildNodes()) {
+        ul.removeChild(ul.firstChild);
+    }
 }
 
 function displayBio(){
