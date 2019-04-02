@@ -1,4 +1,15 @@
-const data_portfolio =[
+const data =[
+    {
+        id: 'contact',
+        name: 'Miguel A. Fernandez',
+        address: '43 Bella Vista Avenue',
+        city: 'Saddle Brook, NJ 07663'},
+    {
+        id: 'social_media',
+        email: 'mferna@outlook.com',
+        github: 'https://github.com/mif9075',
+        phone: '347-453-6989'
+    },
     {
         id: 'intro',
         objective: '',  
@@ -7,38 +18,9 @@ const data_portfolio =[
         summary2: 'Experienced in HTML, CSS, Flexbox, Gridbox and Javascript.'
     },
     {
-        id: 'career_summary'},
-    {
-        id: 'contact',
-        name: 'Miguel A. Fernandez',
-        address: '43 Bella Vista Avenue',
-        city: 'Saddle Brook, NJ 07663',
-        email: 'mferna@outlook.com',
-        github: 'https://github.com/mif9075',
-        phone: '347-453-6989'
-    },
-
-    
-    {
-        id: 'volunteer'
-    },
-    {
-        id: 'skills',
-        skill: ''
-    },
-    {
-        id: 'publications'
-    },
-    {
         id: 'certifications',
         organization: 'ASCP',
         title: 'Certified Laboratory Technologist',
-    },
-    {
-        id: 'courses'
-    },
-    {
-        id: 'honors_awards'
     },
     {
         id: 'languages',
@@ -46,16 +28,36 @@ const data_portfolio =[
         language2: 'Spanish'
     },
     {
-        id: 'organizations'
-    },
-    {
-        id: 'projects'
-    },
-    {
         id: 'programming_languages',
         language: 'CSS',
         language2: 'HTML',
-        language3: 'Javascript'},
+        language3: 'Javascript'}
+    // {
+    //     id: 'career_summary'},
+    // {
+    //     id: 'volunteer'
+    // },
+    // {
+    //     id: 'skills',
+    //     skill: ''
+    // },
+    // {
+    //     id: 'publications'
+    // },
+    
+    // {
+    //     id: 'courses'
+    // },
+    // {
+    //     id: 'honors_awards'
+    // },
+    
+    // {
+    //     id: 'organizations'
+    // },
+    // {
+    //     id: 'projects'
+    // }
 ]
 
 //Background
@@ -76,30 +78,30 @@ const experience = [
         responsibilities: '',
         achievements: ''
     },
-    {
-        employer: 'Northwell Health - Core Laboratory',
-        title: 'Laboratory Technician - Microbiology',
-        year: 'January 2010 - February 2012',
-        address: 'Lake Success, NY',
-        responsibilities: '',
-        achievements: ''
-    },
-    {
-        employer: 'U.S. Army - USARIEM',
-        title: 'Research Technician - Mountain Medicine',
-        year: 'September 2006 - June 2009',
-        address: 'Natick, Massachusetts',
-        responsibilities: '',
-        achievements: ''
-    },
-    {
-        employer: 'U.S. Army - USAMRIID',
-        title: 'Research Technician - Bacteriology Division',
-        year: 'March 2003 - September 2006',
-        address: 'Frederick, Maryland',
-        responsibilities: '',
-        achievements: ''
-    }
+    // {
+    //     employer: 'Northwell Health - Core Laboratory',
+    //     title: 'Laboratory Technician - Microbiology',
+    //     year: 'January 2010 - February 2012',
+    //     address: 'Lake Success, NY',
+    //     responsibilities: '',
+    //     achievements: ''
+    // },
+    // {
+    //     employer: 'U.S. Army - USARIEM',
+    //     title: 'Research Technician - Mountain Medicine',
+    //     year: 'September 2006 - June 2009',
+    //     address: 'Natick, Massachusetts',
+    //     responsibilities: '',
+    //     achievements: ''
+    // },
+    // {
+    //     employer: 'U.S. Army - USAMRIID',
+    //     title: 'Research Technician - Bacteriology Division',
+    //     year: 'March 2003 - September 2006',
+    //     address: 'Frederick, Maryland',
+    //     responsibilities: '',
+    //     achievements: ''
+    // }
 ]
 
 
@@ -116,12 +118,12 @@ const education = [
         school: 'University of Cincinnati',    
         year: '2006-2011'
     },
-    {
-        address: 'Williamstown, Massachusetts',
-        degree: 'Bachelor of Economics',
-        school: 'Williams College',
-        year: 'September 1997 - June 2001'
-    }
+    // {
+    //     address: 'Williamstown, Massachusetts',
+    //     degree: 'Bachelor of Economics',
+    //     school: 'Williams College',
+    //     year: 'September 1997 - June 2001'
+    // }
 
 ]
 
