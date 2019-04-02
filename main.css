@@ -1,8 +1,10 @@
-content, header {
+content, header, #intro {
     display: flex;
+    justify-content: space-around;
 }
 
 footer {
     display: flex;
-    
+    justify-content: space-around;
 }
+

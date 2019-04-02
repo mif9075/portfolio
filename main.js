@@ -1,7 +1,12 @@
 window.onload = init;
 
-function init(){
 
+
+
+
+
+
+function init(){
 for (let i = 0; i < education.length; i++){
     displayEducation(education[i]);
 }
@@ -16,6 +21,7 @@ displayIntro();
 displayCert();
 displayLanguages();
 displayskills();
+
 }
 
 //Helper Functions
@@ -36,10 +42,12 @@ function displayBio(){
     const city = document.createElement('li');
     city.innerText = `Address: ${data[0].city}`;
     bioData.appendChild(city);
+
+    document.getElementById("bio").style.fontSize = "large";
 }
 
 function displayIntro(){
-    const introUl = document.querySelector('#bio');
+    const introUl = document.querySelector('#intro');
 
     const introData = document.createElement('ul');
     introUl.appendChild(introData);
@@ -51,6 +59,8 @@ function displayIntro(){
     const intro2 = document.createElement('li');
     intro2.innerText = `Objective: ${data[2].summary2}`;
     introData.appendChild(intro2);
+
+    document.getElementById("intro").style.fontSize = "large";
 
 }
 
@@ -86,6 +96,8 @@ function displaySocialMedia(){
     const git = document.createElement('li');
     git.innerText = `Github: ${data[1].github}`;
     socialData.appendChild(git);
+
+    document.getElementById("social_media").style.fontSize = "large";
 }
 
 function displayLanguages(){
