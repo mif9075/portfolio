@@ -11,3 +11,19 @@ for (let i = 0; i < data_portfolio.length; i++){
 }
 
 
+for (let i = 0; i < education.length; i++){
+    displayEducation(education[i]);
+}
+
+for (let i = 0; i < experience.length; i++){
+    displayExperience(experience[i]);
+}
+
+//Helper Functions
+function displayEducation(education){
+    const educationUl = document.querySelector('#education');
+}
+
+function displayExperience(experience){
+    const experienceUl = document.querySelector('#experience');
+}
