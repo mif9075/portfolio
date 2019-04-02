@@ -1,3 +1,8 @@
-content, header, footer {
+content, header {
     display: flex;
+}
+
+footer {
+    display: flex;
+    
 }
