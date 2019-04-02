@@ -1,4 +1,4 @@
-const data =[
+const data_portfolio =[
     {
         id: 'intro',
         objective: '',  
