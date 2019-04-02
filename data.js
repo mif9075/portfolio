@@ -64,7 +64,7 @@ const experience = [
         employer: 'New York Presbyterian Hospital',
         title: 'Blood Bank',
         year: 'September 2014 - Present',
-        location: 'New York, NY',
+        address: 'New York, NY',
         responsibilities: '',
         achievements: ''
     },
@@ -72,7 +72,7 @@ const experience = [
         employer: 'North Shore University Hospital',
         title: 'Blood Bank',
         year: 'February 2012 - August 2014',
-        location: 'Manhasset, NY',
+        address: 'Manhasset, NY',
         responsibilities: '',
         achievements: ''
     },
@@ -80,13 +80,15 @@ const experience = [
         employer: 'Northwell Health - Core Laboratory',
         title: 'Laboratory Technician - Microbiology',
         year: 'January 2010 - February 2012',
+        address: 'Lake Success, NY',
         responsibilities: '',
         achievements: ''
     },
     {
         employer: 'U.S. Army - USARIEM',
-        title: 'Research Technician - Mountain Medicinew',
+        title: 'Research Technician - Mountain Medicine',
         year: 'September 2006 - June 2009',
+        address: 'Natick, Massachusetts',
         responsibilities: '',
         achievements: ''
     },
@@ -94,6 +96,7 @@ const experience = [
         employer: 'U.S. Army - USAMRIID',
         title: 'Research Technician - Bacteriology Division',
         year: 'March 2003 - September 2006',
+        address: 'Frederick, Maryland',
         responsibilities: '',
         achievements: ''
     }
