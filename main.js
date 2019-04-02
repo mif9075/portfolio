@@ -29,7 +29,18 @@ function addClick(selector, func){
 function projectAll(event){
     event.preventDefault();
     clearList();
+
+    for (let i = 0; i < project.length; i++){
+
+    const projectUl = document.querySelector('aside');
+    const projectData = document.createElement('ul');
+    projectUl.appendChild(projectData);
     
+    const name = document.createElement('li');
+    name.innerText = `Name of Project: ${project[i].name}`;
+    projectData.appendChild(name);
+    }
+
 }
 
 function clearList(){
