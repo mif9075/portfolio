@@ -27,12 +27,13 @@ function addClick(selector, func){
         .addEventListener('click', func);
 }
 function projectAll(event){
+    
     event.preventDefault();
     clearList();
 
     for (let i = 0; i < project.length; i++){
 
-    const projectUl = document.querySelector('aside');
+    const projectUl = document.querySelector('#portfolio');
     const projectData = document.createElement('ul');
     projectUl.appendChild(projectData);
     

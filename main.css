@@ -8,3 +8,9 @@ footer {
     justify-content: space-around;
 }
 
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
