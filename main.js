@@ -221,5 +221,12 @@ function printDisplay() {
         const name = document.createElement('li');
         name.innerText = `Name of Project: ${project[i].name}`;
         projectData.appendChild(name);
+
+        const date = document.createElement('li');
+        date.innerText = `Date Project Started: ${project[i].date}`;
+        projectData.appendChild(date);
+
+
+        
     }
 }
