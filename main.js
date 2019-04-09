@@ -32,7 +32,8 @@ function projectAll(event) {
     event.preventDefault();
     clearList();
     printDisplay();
-    addClick('#projects', clearList());
+
+    // addClick('#projects', clearList());
 
 }
 
@@ -43,7 +44,7 @@ function clearList() {
 
 function removeAllChildrenOfOl() {
 
-    const ul = document.querySelector('aside');
+    const ul = document.querySelector('#list');
 
     while (ul.hasChildNodes()) {
         ul.removeChild(ul.firstChild);
@@ -131,8 +132,13 @@ function displayLanguages() {
     languageUl.appendChild(languageData);
 
     const language = document.createElement('li');
-    language.innerText = `${data[4].language[0]} ${data[4].language[1]}`;
+    language.innerText = `${data[4].language[0]}`;
     languageData.appendChild(language);
+
+    const language2 = document.createElement('li');
+    language2.innerText = `${data[4].language[1]}`;
+    languageData.appendChild(language2);
+    
 }
 
 function displaySkills() {
@@ -208,7 +214,7 @@ function displayExperience(experience) {
 function printDisplay() {
     for (let i = 0; i < project.length; i++) {
 
-        const projectUl = document.querySelector('#portfolio');
+        const projectUl = document.querySelector('#list');
         const projectData = document.createElement('ul');
         projectUl.appendChild(projectData);
 

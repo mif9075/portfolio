@@ -1,16 +1,20 @@
-content, header, #intro {
+header, #intro {
     display: flex;
     justify-content: space-around;
+}
+
+
+content  {
+    display: flex;
+}
+
+
+#list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer {
     display: flex;
-    justify-content: space-around;
-}
-
-#portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    
+    justify-content: space-evenly;
 }

@@ -66,36 +66,51 @@ const education = [
 const project = [
     {
         name: 'Basic Javascript Page',
+        date: 2/17/2019,
     },
     {
         name: 'Boston Red Sox Book',
+        date: 3/24/2019,
     },
     {
-        name: 'Boostrap Title Case'
+        name: 'Boostrap Title Case',
+        date: 2/17/2019,
     },
     {
         name: 'Bucket List',
+        date: 3/3/2019,
     },
     {
         name: 'Portfolio',
+        date: 3/31/2019,
     },
     {
-        name: 'Just How we roll'
+        name: 'Just How we roll',
+        date: 3/17/2019,
     },
     {
-        name: 'Multicalc'
+        name: 'Multicalc',
+        date: 3/3/2019,
     },
     {
-        name: 'the Input Game'
+        name: 'the Input Game',
+        date: 2/24/2019,
     },
     {
         name: 'ToDone',
+        date: 3/17/2019,
     },
     {
-        name: 'Velcro',
+        name: '2do',
+        date: 3/10/2019,
     },
     {
-        name: '2do'
+        name: 'ToDone: Object',
+        date: 3/17/2019,
+    },
+    {
+        name: 'The Maze of Methodical Monster',
+        date: 3/31/2019,
     }
 
 ]
