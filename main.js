@@ -30,6 +30,8 @@ function addClick(selector, func) {
 function projectAll(event) {
 
     event.preventDefault();
+    document.getElementById("projects").innerHTML=
+   "Display Experience/Education";
     clearList();
     printDisplay();
 
@@ -225,8 +227,11 @@ function printDisplay() {
     for (let i = 0; i < project.length; i++) {
 
         const projectUl = document.querySelector('#list');
+        
         const projectData = document.createElement('ul');
         projectUl.appendChild(projectData);
+
+        
 
         const name = document.createElement('li');
         name.innerText = `Name of Project: ${project[i].name}`;
@@ -243,7 +248,6 @@ function printDisplay() {
         const website = document.createElement('li');
         website.innerText = `Github: ${project[i].website}`;
         projectData.appendChild(website);
-
 
         
     }
