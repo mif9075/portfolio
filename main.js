@@ -44,11 +44,19 @@ function clearList() {
 
 function removeAllChildrenOfOl() {
 
-    const ul = document.querySelector('#list');
+    const ul = document.querySelector('content');
 
     while (ul.hasChildNodes()) {
         ul.removeChild(ul.firstChild);
     }
+
+    const ol = document.querySelector('footer');
+
+    while (ol.hasChildNodes()) {
+        ol.removeChild(ol.firstChild);
+    }
+
+
 }
 
 function displayBio() {

@@ -85,12 +85,14 @@ const project = [
     {
         name: 'ToDone: Object',
         date: '3/17/2019',
-        description: 'abc',
+        description: 'ToDone: Object Version.',
+        website: 'https://github.com/mif9075/todone-object-version',
     },
     {
         name: 'ToDone',
-        date: '3/17/2019',
-        description: 'abc',
+        date: '3/18/2019',
+        description: 'ToDone.',
+        website: 'https://github.com/mif9075/todone',
     },
     {
         name: 'Just How We roll',
@@ -106,27 +108,33 @@ const project = [
     },
     {
         name: 'Bucket List',
-        date: '3/3/2019',
-        description: 'abc',
+        date: '3/5/2019',
+        description: 'Extremely simple todo app.',
+        website: 'https://github.com/mif9075/bucket-list',
     },
     {
         name: 'Multicalc',
-        date: '3/3/2019',
-        description: 'abc',
+        date: '3/8/2019',
+        description: 'Calculator to be able to perform the same operation on multiple numbers at once.',
+        website: 'https://github.com/mif9075/multicalc',
     },
     {
         name: 'the Input Game',
-        date: '2/24/2019',
-        description: 'abc',
+        date: '2/27/2019',
+        description: 'Look at five inputs from the user and give them a result. It will do so by comparing the input they typed to a range of possible answers.',
+        website: 'https://github.com/mif9075/the-input-game',
     },
     {
         name: 'Basic Javascript Page',
-        date: '2/17/2019',
-        description: 'abc',
+        date: '2/20/2019',
+        description: 'Introduction to Javascript.',
+        website: 'https://github.com/mif9075/basic-js-page',
     },
     {
         name: 'Boostrap Title Case',
-        date: '2/17/2019',
+        date: '2/20/2019',
+        description: 'Bootstrap-layouted app.',
+        website: 'https://github.com/mif9075/bootstrap-title-case',
 
     },
     {

@@ -4,17 +4,11 @@ header, #intro {
 }
 
 
-content  {
-    display: flex;
-}
-
-
-#list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-footer {
+content, footer  {
     display: flex;
     justify-content: space-evenly;
 }
+
+
+
+
