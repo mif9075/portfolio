@@ -74,6 +74,7 @@ function displayBio() {
 
 function displayIntro() {
     const introUl = document.querySelector('#intro');
+    document.querySelector("#intro").style.fontSize = "large";
 
     const introData = document.createElement('ul');
     introUl.appendChild(introData);
@@ -86,7 +87,7 @@ function displayIntro() {
     intro2.innerText = `Objective: ${data[2].summary2}`;
     introData.appendChild(intro2);
 
-    document.getElementById("intro").style.fontSize = "large";
+    
 }
 
 function displayCert() {
@@ -106,6 +107,7 @@ function displayCert() {
 
 function displaySocialMedia() {
     const socialUl = document.querySelector('#social_media');
+    document.querySelector("#social_media").style.fontSize = "large";
 
     const socialData = document.createElement('ul');
     socialUl.appendChild(socialData);
@@ -122,7 +124,7 @@ function displaySocialMedia() {
     git.innerText = `Github: ${data[1].github}`;
     socialData.appendChild(git);
 
-    document.getElementById("social_media").style.fontSize = "large";
+    
 }
 
 function displayLanguages() {
@@ -225,6 +227,14 @@ function printDisplay() {
         const date = document.createElement('li');
         date.innerText = `Date Project Started: ${project[i].date}`;
         projectData.appendChild(date);
+
+        const description = document.createElement('li');
+        description.innerText = `Project Description: ${project[i].description}`;
+        projectData.appendChild(description);
+
+        const website = document.createElement('li');
+        website.innerText = `Github: ${project[i].website}`;
+        projectData.appendChild(website);
 
 
         

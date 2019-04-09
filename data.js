@@ -65,19 +65,22 @@ const education = [
 
 const project = [
     {
-        name: 'Portfolio',
-        date: '3/31/2019',
-        description: 'abc',
+        name: 'The Maze of Methodical Monster',
+        date: '4/3/2019',
+        description: 'This project is a game-making project, where player and monster take damage.',
+        website: 'https://github.com/mif9075/the-maze-of-methodical-monsters',
     },
     {
-        name: 'The Maze of Methodical Monster',
-        date: '3/31/2019',
-        description: 'abc',
+        name: 'Portfolio',
+        date: '4/2/2019',
+        description: 'Portfolio of projects, work experience and education.',
+        website: 'https://github.com/mif9075/portfolio',
     },
     {
         name: 'Boston Red Sox Book',
-        date: '3/24/2019',
-        description: 'abc',
+        date: '3/27/2019',
+        description: 'Boston Red Sox lineup using objects in Javascript.',
+        website: 'https://github.com/mif9075/Bostonredsoxbook',
     },
     {
         name: 'ToDone: Object',
@@ -90,14 +93,16 @@ const project = [
         description: 'abc',
     },
     {
-        name: 'Just How we roll',
-        date: '3/17/2019',
-        description: 'abc',
+        name: 'Just How We roll',
+        date: '3/21/2019',
+        description: 'Random dice project.',
+        website: 'https://github.com/mif9075/just-how-we-roll',
     },
     {
         name: '2do',
-        date: '3/10/2019',
-        description: 'abc',
+        date: '3/14/2019',
+        description: 'To do list with completed and uncompleted lists.',
+        website: 'https://github.com/mif9075/2do',
     },
     {
         name: 'Bucket List',
@@ -124,5 +129,11 @@ const project = [
         date: '2/17/2019',
 
     },
+    {
+        name: 'Velcro',
+        date: '2/14/2019',
+        description: 'An exercise in which you will re-implement Bootstrap-s grid system.',
+        website:'https://github.com/mif9075/velcro',
+    }
     
 ]
