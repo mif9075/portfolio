@@ -1,8 +1,10 @@
 window.onload = init;
 
+let isPortfolio = false;
+
 function init() {
 
-    addClick('#toggle', projectAll);
+    addClick('#toggle', togglePortfolioandExp);
 
     displayBio();
     displayIntro();
@@ -229,39 +231,38 @@ function displayExperience(experience) {
     experienceData.appendChild(address);
 }
 
-function resetAll(event) {
+function togglePortfolioandExp(event) {
     
     event.preventDefault();
-    
-    document.getElementById("toggle").innerHTML=
-   "Click for Projects";
-    clearList();
 
-    for (let i = 0; i < education.length; i++) {
-        displayEducation(education[i]);
+    if (isPortfolio === false){
+        isPortfolio = true;
+
+        document.getElementById("toggle").innerHTML=
+        "Display Experience/Education";
+        clearList();
+        printDisplay();
+
+    } else if (isPortfolio === true) {
+        isPortfolio = false;
+
+        document.getElementById("toggle").innerHTML=
+        "Click for Projects";
+         clearList();
+     
+         for (let i = 0; i < education.length; i++) {
+             displayEducation(education[i]);
+         }
+     
+         for (let i = 0; i < experience.length; i++) {
+             displayExperience(experience[i]);
+         }
+     
+         displaySkills();
+         displayLanguages();
+         displayCert();
+        
     }
-
-    for (let i = 0; i < experience.length; i++) {
-        displayExperience(experience[i]);
-    }
-
-    displaySkills();
-    displayLanguages();
-    displayCert();
-
-    addClick('#toggle', projectAll);
-}
-
-function projectAll(event) {
-    
-    event.preventDefault();
-    document.getElementById("toggle").innerHTML=
-   "Display Experience/Education";
-    clearList();
-
-    printDisplay();
-    
-    addClick('#toggle', resetAll);
 }
 
 function printDisplay() {
