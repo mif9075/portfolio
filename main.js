@@ -1,7 +1,9 @@
 window.onload = init;
 
+// Global Variable
 let isPortfolio = false;
 
+//Function to Initialize
 function init() {
 
     addClick('#toggle', togglePortfolioandExp);
@@ -25,50 +27,8 @@ function init() {
 
 }
 
-//Helper Functions
-function addClick(selector, func) {
-    document.querySelector(selector)
-        .addEventListener('click', func);
-}
 
-function clearList() {
-    event.preventDefault();
-    removeAllChildrenOfOl();
-}
-
-function removeAllChildrenOfOl() {
-
-    const ul = document.querySelector('#experience');
-
-    while (ul.hasChildNodes()) {
-        ul.removeChild(ul.firstChild);
-    }
-
-    const ol = document.querySelector('#education');
-
-    while (ol.hasChildNodes()) {
-        ol.removeChild(ol.firstChild);
-    }
-
-    const ol2 = document.querySelector('#skills');
-
-    while (ol2.hasChildNodes()) {
-        ol2.removeChild(ol2.firstChild);
-    }
-
-    const ol3 = document.querySelector('#cert');
-
-    while (ol3.hasChildNodes()) {
-        ol3.removeChild(ol3.firstChild);
-    }
-
-    const ol4 = document.querySelector('#language');
-
-    while (ol4.hasChildNodes()) {
-        ol4.removeChild(ol4.firstChild);
-    }
-}
-
+//Bio, Intro, Display Social Media; Doesn't change when toggling.
 function displayBio() {
     const bioUl = document.querySelector('#bio');
 
@@ -105,22 +65,6 @@ function displayIntro() {
     intro2.innerText = `Objective: ${data[2].summary2}`;
     introData.appendChild(intro2);
 
-    
-}
-
-function displayCert() {
-    const certUl = document.querySelector('#cert');
-
-    const certData = document.createElement('ul');
-    certUl.appendChild(certData);
-
-    const title = document.createElement('li');
-    title.innerText = `Title: ${data[3].title}`;
-    certData.appendChild(title);
-
-    const cert = document.createElement('li');
-    cert.innerText = `Organization: ${data[3].organization}`;
-    certData.appendChild(cert);
 }
 
 function displaySocialMedia() {
@@ -141,9 +85,25 @@ function displaySocialMedia() {
     const git = document.createElement('li');
     git.innerText = `Github: ${data[1].github}`;
     socialData.appendChild(git);
-
-    
 }
+
+function displayCert() {
+    const certUl = document.querySelector('#cert');
+
+    const certData = document.createElement('ul');
+    certUl.appendChild(certData);
+
+    const title = document.createElement('li');
+    title.innerText = `Title: ${data[3].title}`;
+    certData.appendChild(title);
+
+    const cert = document.createElement('li');
+    cert.innerText = `Organization: ${data[3].organization}`;
+    certData.appendChild(cert);
+}
+
+//Languages, Certifications, Computer Skills, Education and Experience.
+//Changes to Portfolio when toggling.
 
 function displayLanguages() {
     const languageUl = document.querySelector('#language');
@@ -231,6 +191,7 @@ function displayExperience(experience) {
     experienceData.appendChild(address);
 }
 
+
 function togglePortfolioandExp(event) {
     
     event.preventDefault();
@@ -241,9 +202,10 @@ function togglePortfolioandExp(event) {
         document.getElementById("toggle").innerHTML=
         "Display Experience/Education";
         clearList();
-        printDisplay();
+        displayPortfolio();
 
     } else if (isPortfolio === true) {
+
         isPortfolio = false;
 
         document.getElementById("toggle").innerHTML=
@@ -261,11 +223,10 @@ function togglePortfolioandExp(event) {
          displaySkills();
          displayLanguages();
          displayCert();
-        
     }
 }
 
-function printDisplay() {
+function displayPortfolio() {
     for (let i = 0; i < project.length; i++) {
 
         const projectUl = document.querySelector('#language');
@@ -288,5 +249,50 @@ function printDisplay() {
         const website = document.createElement('li');
         website.innerText = `Github: ${project[i].website}`;
         projectData.appendChild(website);
+    }
+}
+
+
+//Helper Functions
+function addClick(selector, func) {
+    document.querySelector(selector)
+        .addEventListener('click', func);
+}
+
+function clearList() {
+    event.preventDefault();
+    removeAllChildrenOfOl();
+}
+
+function removeAllChildrenOfOl() {
+
+    const ul = document.querySelector('#experience');
+
+    while (ul.hasChildNodes()) {
+        ul.removeChild(ul.firstChild);
+    }
+
+    const ol = document.querySelector('#education');
+
+    while (ol.hasChildNodes()) {
+        ol.removeChild(ol.firstChild);
+    }
+
+    const ol2 = document.querySelector('#skills');
+
+    while (ol2.hasChildNodes()) {
+        ol2.removeChild(ol2.firstChild);
+    }
+
+    const ol3 = document.querySelector('#cert');
+
+    while (ol3.hasChildNodes()) {
+        ol3.removeChild(ol3.firstChild);
+    }
+
+    const ol4 = document.querySelector('#language');
+
+    while (ol4.hasChildNodes()) {
+        ol4.removeChild(ol4.firstChild);
     }
 }
