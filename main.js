@@ -2,7 +2,7 @@ window.onload = init;
 
 function init() {
 
-    addClick('#projects', projectAll);
+    addClick('#toggle', projectAll);
 
     displayBio();
     displayIntro();
@@ -230,14 +230,12 @@ function displayExperience(experience) {
 }
 
 function resetAll(event) {
+    
     event.preventDefault();
-    document.getElementById("projects").innerHTML=
+    
+    document.getElementById("toggle").innerHTML=
    "Click for Projects";
     clearList();
-    
-    // displayBio();
-    // displayIntro();
-    // displaySocialMedia();
 
     for (let i = 0; i < education.length; i++) {
         displayEducation(education[i]);
@@ -251,25 +249,25 @@ function resetAll(event) {
     displayLanguages();
     displayCert();
 
-    addClick('#projects', projectAll);
+    addClick('#toggle', projectAll);
 }
 
 function projectAll(event) {
-
+    
     event.preventDefault();
-    document.getElementById("projects").innerHTML=
+    document.getElementById("toggle").innerHTML=
    "Display Experience/Education";
     clearList();
 
     printDisplay();
-
-    addClick('#projects', resetAll);
+    
+    addClick('#toggle', resetAll);
 }
 
 function printDisplay() {
     for (let i = 0; i < project.length; i++) {
 
-        const projectUl = document.querySelector('#list');
+        const projectUl = document.querySelector('#language');
         
         const projectData = document.createElement('ul');
         projectUl.appendChild(projectData);
