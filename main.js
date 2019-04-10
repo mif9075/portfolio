@@ -5,11 +5,13 @@ function init() {
     addClick('#projects', projectAll);
 
     displayBio();
-    displayCert();
     displayIntro();
+    displaySocialMedia();
+
+    displayCert();
     displayLanguages();
     displaySkills();
-    displaySocialMedia();
+    
 
     for (let i = 0; i < education.length; i++) {
         displayEducation(education[i]);
@@ -27,18 +29,6 @@ function addClick(selector, func) {
         .addEventListener('click', func);
 }
 
-function projectAll(event) {
-
-    event.preventDefault();
-    document.getElementById("projects").innerHTML=
-   "Display Experience/Education";
-    clearList();
-    printDisplay();
-
-    // addClick('#projects', clearList());
-
-}
-
 function clearList() {
     event.preventDefault();
     removeAllChildrenOfOl();
@@ -46,19 +36,35 @@ function clearList() {
 
 function removeAllChildrenOfOl() {
 
-    const ul = document.querySelector('content');
+    const ul = document.querySelector('#experience');
 
     while (ul.hasChildNodes()) {
         ul.removeChild(ul.firstChild);
     }
 
-    const ol = document.querySelector('footer');
+    const ol = document.querySelector('#education');
 
     while (ol.hasChildNodes()) {
         ol.removeChild(ol.firstChild);
     }
 
+    const ol2 = document.querySelector('#skills');
 
+    while (ol2.hasChildNodes()) {
+        ol2.removeChild(ol2.firstChild);
+    }
+
+    const ol3 = document.querySelector('#cert');
+
+    while (ol3.hasChildNodes()) {
+        ol3.removeChild(ol3.firstChild);
+    }
+
+    const ol4 = document.querySelector('#language');
+
+    while (ol4.hasChildNodes()) {
+        ol4.removeChild(ol4.firstChild);
+    }
 }
 
 function displayBio() {
@@ -223,6 +229,43 @@ function displayExperience(experience) {
     experienceData.appendChild(address);
 }
 
+function resetAll(event) {
+    event.preventDefault();
+    document.getElementById("projects").innerHTML=
+   "Click for Projects";
+    clearList();
+    
+    // displayBio();
+    // displayIntro();
+    // displaySocialMedia();
+
+    for (let i = 0; i < education.length; i++) {
+        displayEducation(education[i]);
+    }
+
+    for (let i = 0; i < experience.length; i++) {
+        displayExperience(experience[i]);
+    }
+
+    displaySkills();
+    displayLanguages();
+    displayCert();
+
+    addClick('#projects', projectAll);
+}
+
+function projectAll(event) {
+
+    event.preventDefault();
+    document.getElementById("projects").innerHTML=
+   "Display Experience/Education";
+    clearList();
+
+    printDisplay();
+
+    addClick('#projects', resetAll);
+}
+
 function printDisplay() {
     for (let i = 0; i < project.length; i++) {
 
@@ -230,8 +273,6 @@ function printDisplay() {
         
         const projectData = document.createElement('ul');
         projectUl.appendChild(projectData);
-
-        
 
         const name = document.createElement('li');
         name.innerText = `Name of Project: ${project[i].name}`;
@@ -248,7 +289,5 @@ function printDisplay() {
         const website = document.createElement('li');
         website.innerText = `Github: ${project[i].website}`;
         projectData.appendChild(website);
-
-        
     }
 }
