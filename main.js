@@ -50,23 +50,6 @@ function displayBio() {
     bioUl.style.fontSize = "large";
 }
 
-function displayIntro() {
-    const introUl = document.querySelector('#intro');
-    document.querySelector("#intro").style.fontSize = "large";
-
-    const introData = document.createElement('ul');
-    introUl.appendChild(introData);
-
-    const intro = document.createElement('li');
-    intro.innerText = `Objective: ${data[2].summary}`;
-    introData.appendChild(intro);
-
-    const intro2 = document.createElement('li');
-    intro2.innerText = `Objective: ${data[2].summary2}`;
-    introData.appendChild(intro2);
-
-}
-
 function displaySocialMedia() {
     const socialUl = document.querySelector('#social_media');
     document.querySelector("#social_media").style.fontSize = "large";
@@ -87,58 +70,51 @@ function displaySocialMedia() {
     socialData.appendChild(git);
 }
 
-function displayCert() {
-    const certUl = document.querySelector('#cert');
 
-    const certData = document.createElement('ul');
-    certUl.appendChild(certData);
+function displayIntro() {
+    const introUl = document.querySelector('#intro');
+    document.querySelector("#intro").style.fontSize = "large";
 
-    const title = document.createElement('li');
-    title.innerText = `Title: ${data[3].title}`;
-    certData.appendChild(title);
+    const introData = document.createElement('ul');
+    introUl.appendChild(introData);
 
-    const cert = document.createElement('li');
-    cert.innerText = `Organization: ${data[3].organization}`;
-    certData.appendChild(cert);
+    const intro = document.createElement('li');
+    intro.innerText = `Objective: ${data[2].summary}`;
+    introData.appendChild(intro);
+
+    const intro2 = document.createElement('li');
+    intro2.innerText = `Objective: ${data[2].summary2}`;
+    introData.appendChild(intro2);
+
 }
+
 
 //Languages, Certifications, Computer Skills, Education and Experience.
 //Changes to Portfolio when toggling.
 
-function displayLanguages() {
-    const languageUl = document.querySelector('#language');
+function displayExperience(experience) {
+    const experienceUl = document.querySelector('#experience');
 
-    const languageData = document.createElement('ul');
-    languageUl.appendChild(languageData);
+    // const experienceLi = document.createElement('li');
+    const experienceData = document.createElement('ul');
+    experienceUl.appendChild(experienceData);
+    // experienceUl.appendChild(experienceLi);
 
-    const language = document.createElement('li');
-    language.innerText = `${data[4].language[0]}`;
-    languageData.appendChild(language);
+    const title = document.createElement('li');
+    title.innerText = `Position: ${experience.title}`;
+    experienceData.appendChild(title);
 
-    const language2 = document.createElement('li');
-    language2.innerText = `${data[4].language[1]}`;
-    languageData.appendChild(language2);
-    
-}
+    const year = document.createElement('li');
+    year.innerText = `Year: ${experience.year}`;
+    experienceData.appendChild(year);
 
-function displaySkills() {
-    const skillUl = document.querySelector('#skills');
+    const employer = document.createElement('li');
+    employer.innerText = `Employer: ${experience.employer}`;
+    experienceData.appendChild(employer);
 
-    const skillData = document.createElement('ul');
-    skillUl.appendChild(skillData);
-
-    const skill = document.createElement('li');
-    skill.innerText = `${data[5].skill}`;
-    skillData.appendChild(skill);
-
-    const skill2 = document.createElement('li');
-    skill2.innerText = `${data[5].skill2}`;
-    skillData.appendChild(skill2);
-
-    const skill3 = document.createElement('li');
-    skill3.innerText = `${data[5].skill3}`;
-    skillData.appendChild(skill3);
-
+    const address = document.createElement('li');
+    address.innerText = `Address: ${experience.address}`;
+    experienceData.appendChild(address);
 }
 
 function displayEducation(education) {
@@ -166,32 +142,58 @@ function displayEducation(education) {
     educationData.appendChild(address);
 }
 
-function displayExperience(experience) {
-    const experienceUl = document.querySelector('#experience');
+function displaySkills() {
+    const skillUl = document.querySelector('#skills');
 
-    // const experienceLi = document.createElement('li');
-    const experienceData = document.createElement('ul');
-    experienceUl.appendChild(experienceData);
-    // experienceUl.appendChild(experienceLi);
+    const skillData = document.createElement('ul');
+    skillUl.appendChild(skillData);
 
-    const title = document.createElement('li');
-    title.innerText = `Position: ${experience.title}`;
-    experienceData.appendChild(title);
+    const skill = document.createElement('li');
+    skill.innerText = `${data[5].skill}`;
+    skillData.appendChild(skill);
 
-    const year = document.createElement('li');
-    year.innerText = `Year: ${experience.year}`;
-    experienceData.appendChild(year);
+    const skill2 = document.createElement('li');
+    skill2.innerText = `${data[5].skill2}`;
+    skillData.appendChild(skill2);
 
-    const employer = document.createElement('li');
-    employer.innerText = `Employer: ${experience.employer}`;
-    experienceData.appendChild(employer);
+    const skill3 = document.createElement('li');
+    skill3.innerText = `${data[5].skill3}`;
+    skillData.appendChild(skill3);
 
-    const address = document.createElement('li');
-    address.innerText = `Address: ${experience.address}`;
-    experienceData.appendChild(address);
 }
 
+function displayCert() {
+    const certUl = document.querySelector('#cert');
 
+    const certData = document.createElement('ul');
+    certUl.appendChild(certData);
+
+    const title = document.createElement('li');
+    title.innerText = `Title: ${data[3].title}`;
+    certData.appendChild(title);
+
+    const cert = document.createElement('li');
+    cert.innerText = `Organization: ${data[3].organization}`;
+    certData.appendChild(cert);
+}
+
+function displayLanguages() {
+    const languageUl = document.querySelector('#language');
+
+    const languageData = document.createElement('ul');
+    languageUl.appendChild(languageData);
+
+    const language = document.createElement('li');
+    language.innerText = `${data[4].language[0]}`;
+    languageData.appendChild(language);
+
+    const language2 = document.createElement('li');
+    language2.innerText = `${data[4].language[1]}`;
+    languageData.appendChild(language2);
+    
+}
+
+// Toggle function
 function togglePortfolioandExp(event) {
     
     event.preventDefault();
@@ -226,6 +228,8 @@ function togglePortfolioandExp(event) {
     }
 }
 
+
+//Display Portfolio
 function displayPortfolio() {
     for (let i = 0; i < project.length; i++) {
 
