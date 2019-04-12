@@ -1,20 +1,10 @@
-/* header, #intro { */
-    /* display: flex;
-    flex-direction: row; 
-    justify-content: space-around;
-     */
-/* } */
-
-
-content {
-    display: flex;
-    justify-content: space-evenly;
-} 
-
-#bottom {
+#top_content, #intro, content, #bottom_content {
     display: flex;
     justify-content: space-evenly;
 }
+
+
+
 
 
 
