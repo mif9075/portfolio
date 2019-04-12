@@ -1,3 +1,5 @@
+'use strict';
+
 window.onload = init;
 
 // Global Variable
@@ -231,6 +233,7 @@ function togglePortfolioandExp(event) {
 
 //Display Portfolio
 function displayPortfolio() {
+
     for (let i = 0; i < project.length; i++) {
 
         const projectUl = document.querySelector('#language');
@@ -254,6 +257,7 @@ function displayPortfolio() {
         website.innerText = `Github: ${project[i].website}`;
         projectData.appendChild(website);
     }
+    // projectData.innerText = 'PORTFOLIO';
 }
 
 

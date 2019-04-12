@@ -1,10 +1,17 @@
-header, #intro {
-    display: flex;
+/* header, #intro { */
+    /* display: flex;
+    flex-direction: row; 
     justify-content: space-around;
-}
+     */
+/* } */
 
 
-content, footer  {
+content {
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+#bottom {
     display: flex;
     justify-content: space-evenly;
 }
