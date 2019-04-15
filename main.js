@@ -214,11 +214,11 @@ function togglePortfolioandExp(event) {
         "Click for Projects";
          clearList();
      
-         for (let i = 0; i < education.length; i++) {
+         for (let i = 0; i < data.education.length; i++) {
              displayEducation(data.education[i]);
          }
      
-         for (let i = 0; i < experience.length; i++) {
+         for (let i = 0; i < data.experience.length; i++) {
              displayExperience(data.experience[i]);
          }
      
