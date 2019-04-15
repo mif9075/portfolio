@@ -101,19 +101,19 @@ function displayExperience(experience) {
     // experienceUl.appendChild(experienceLi);
 
     const title = document.createElement('li');
-    title.innerText = `Position: ${data.experience.title}`;
+    title.innerText = `Position: ${experience.title}`;
     experienceData.appendChild(title);
 
     const year = document.createElement('li');
-    year.innerText = `Year: ${data.experience.year}`;
+    year.innerText = `Year: ${experience.year}`;
     experienceData.appendChild(year);
 
     const employer = document.createElement('li');
-    employer.innerText = `Employer: ${data.experience.employer}`;
+    employer.innerText = `Employer: ${experience.employer}`;
     experienceData.appendChild(employer);
 
     const address = document.createElement('li');
-    address.innerText = `Address: ${data.experience.address}`;
+    address.innerText = `Address: ${experience.address}`;
     experienceData.appendChild(address);
 }
 
@@ -126,19 +126,19 @@ function displayEducation(education) {
     // educationUl.appendChild(educationLi);
 
     const degree = document.createElement('li');
-    degree.innerText = `Degree: ${data.education.degree}`;
+    degree.innerText = `Degree: ${education.degree}`;
     educationData.appendChild(degree);
 
     const year = document.createElement('li');
-    year.innerText = `Year: ${data.education.year}`;
+    year.innerText = `Year: ${education.year}`;
     educationData.appendChild(year);
 
     const school = document.createElement('li');
-    school.innerText = `School: ${data.education.school}`;
+    school.innerText = `School: ${education.school}`;
     educationData.appendChild(school);
 
     const address = document.createElement('li');
-    address.innerText = `Address: ${data.education.address}`;
+    address.innerText = `Address: ${education.address}`;
     educationData.appendChild(address);
 }
 
