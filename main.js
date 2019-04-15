@@ -1,5 +1,3 @@
-'use strict';
-
 window.onload = init;
 
 // Global Variable
@@ -19,12 +17,12 @@ function init() {
     displaySkills();
     
 
-    for (let i = 0; i < education.length; i++) {
-        displayEducation(education[i]);
+    for (let i = 0; i < data.education.length; i++) {
+        displayEducation(data.education[i]);
     }
 
-    for (let i = 0; i < experience.length; i++) {
-        displayExperience(experience[i]);
+    for (let i = 0; i < data.experience.length; i++) {
+        displayExperience(data.experience[i]);
     }
 
 }
@@ -38,15 +36,15 @@ function displayBio() {
     bioUl.appendChild(bioData);
 
     const name = document.createElement('li');
-    name.innerText = `Name: ${data[0].name}`;
+    name.innerText = `Name: ${data.profile[0].name}`;
     bioData.appendChild(name);
 
     const address = document.createElement('li');
-    address.innerText = `Address: ${data[0].address}`;
+    address.innerText = `Address: ${data.profile[0].address}`;
     bioData.appendChild(address);
 
     const city = document.createElement('li');
-    city.innerText = `Address: ${data[0].city}`;
+    city.innerText = `Address: ${data.profile[0].city}`;
     bioData.appendChild(city);
 
     bioUl.style.fontSize = "large";
@@ -60,15 +58,15 @@ function displaySocialMedia() {
     socialUl.appendChild(socialData);
 
     const email = document.createElement('li');
-    email.innerText = `Email: ${data[1].email}`;
+    email.innerText = `Email: ${data.profile[1].email}`;
     socialData.appendChild(email);
 
     const phone = document.createElement('li');
-    phone.innerText = `Phone: ${data[1].phone}`;
+    phone.innerText = `Phone: ${data.profile[1].phone}`;
     socialData.appendChild(phone);
 
     const git = document.createElement('li');
-    git.innerText = `Github: ${data[1].github}`;
+    git.innerText = `Github: ${data.profile[1].github}`;
     socialData.appendChild(git);
 }
 
@@ -81,11 +79,11 @@ function displayIntro() {
     introUl.appendChild(introData);
 
     const intro = document.createElement('li');
-    intro.innerText = `Objective: ${data[2].summary}`;
+    intro.innerText = `Objective: ${data.profile[2].summary}`;
     introData.appendChild(intro);
 
     const intro2 = document.createElement('li');
-    intro2.innerText = `Objective: ${data[2].summary2}`;
+    intro2.innerText = `Objective: ${data.profile[2].summary2}`;
     introData.appendChild(intro2);
 
 }
@@ -103,19 +101,19 @@ function displayExperience(experience) {
     // experienceUl.appendChild(experienceLi);
 
     const title = document.createElement('li');
-    title.innerText = `Position: ${experience.title}`;
+    title.innerText = `Position: ${data.experience.title}`;
     experienceData.appendChild(title);
 
     const year = document.createElement('li');
-    year.innerText = `Year: ${experience.year}`;
+    year.innerText = `Year: ${data.experience.year}`;
     experienceData.appendChild(year);
 
     const employer = document.createElement('li');
-    employer.innerText = `Employer: ${experience.employer}`;
+    employer.innerText = `Employer: ${data.experience.employer}`;
     experienceData.appendChild(employer);
 
     const address = document.createElement('li');
-    address.innerText = `Address: ${experience.address}`;
+    address.innerText = `Address: ${data.experience.address}`;
     experienceData.appendChild(address);
 }
 
@@ -128,19 +126,19 @@ function displayEducation(education) {
     // educationUl.appendChild(educationLi);
 
     const degree = document.createElement('li');
-    degree.innerText = `Degree: ${education.degree}`;
+    degree.innerText = `Degree: ${data.education.degree}`;
     educationData.appendChild(degree);
 
     const year = document.createElement('li');
-    year.innerText = `Year: ${education.year}`;
+    year.innerText = `Year: ${data.education.year}`;
     educationData.appendChild(year);
 
     const school = document.createElement('li');
-    school.innerText = `School: ${education.school}`;
+    school.innerText = `School: ${data.education.school}`;
     educationData.appendChild(school);
 
     const address = document.createElement('li');
-    address.innerText = `Address: ${education.address}`;
+    address.innerText = `Address: ${data.education.address}`;
     educationData.appendChild(address);
 }
 
@@ -151,15 +149,15 @@ function displaySkills() {
     skillUl.appendChild(skillData);
 
     const skill = document.createElement('li');
-    skill.innerText = `${data[5].skill}`;
+    skill.innerText = `${data.profile[5].skill}`;
     skillData.appendChild(skill);
 
     const skill2 = document.createElement('li');
-    skill2.innerText = `${data[5].skill2}`;
+    skill2.innerText = `${data.profile[5].skill2}`;
     skillData.appendChild(skill2);
 
     const skill3 = document.createElement('li');
-    skill3.innerText = `${data[5].skill3}`;
+    skill3.innerText = `${data.profile[5].skill3}`;
     skillData.appendChild(skill3);
 
 }
@@ -171,11 +169,11 @@ function displayCert() {
     certUl.appendChild(certData);
 
     const title = document.createElement('li');
-    title.innerText = `Title: ${data[3].title}`;
+    title.innerText = `Title: ${data.profile[3].title}`;
     certData.appendChild(title);
 
     const cert = document.createElement('li');
-    cert.innerText = `Organization: ${data[3].organization}`;
+    cert.innerText = `Organization: ${data.profile[3].organization}`;
     certData.appendChild(cert);
 }
 
@@ -186,11 +184,11 @@ function displayLanguages() {
     languageUl.appendChild(languageData);
 
     const language = document.createElement('li');
-    language.innerText = `${data[4].language[0]}`;
+    language.innerText = `${data.profile[4].language[0]}`;
     languageData.appendChild(language);
 
     const language2 = document.createElement('li');
-    language2.innerText = `${data[4].language[1]}`;
+    language2.innerText = `${data.profile[4].language[1]}`;
     languageData.appendChild(language2);
     
 }
@@ -217,11 +215,11 @@ function togglePortfolioandExp(event) {
          clearList();
      
          for (let i = 0; i < education.length; i++) {
-             displayEducation(education[i]);
+             displayEducation(data.education[i]);
          }
      
          for (let i = 0; i < experience.length; i++) {
-             displayExperience(experience[i]);
+             displayExperience(data.experience[i]);
          }
      
          displaySkills();
@@ -234,7 +232,7 @@ function togglePortfolioandExp(event) {
 //Display Portfolio
 function displayPortfolio() {
 
-    for (let i = 0; i < project.length; i++) {
+    for (let i = 0; i < data.project.length; i++) {
 
         const projectUl = document.querySelector('#language');
         
@@ -242,19 +240,19 @@ function displayPortfolio() {
         projectUl.appendChild(projectData);
 
         const name = document.createElement('li');
-        name.innerText = `Name of Project: ${project[i].name}`;
+        name.innerText = `Name of Project: ${data.project[i].name}`;
         projectData.appendChild(name);
 
         const date = document.createElement('li');
-        date.innerText = `Date Project Started: ${project[i].date}`;
+        date.innerText = `Date Project Started: ${data.project[i].date}`;
         projectData.appendChild(date);
 
         const description = document.createElement('li');
-        description.innerText = `Project Description: ${project[i].description}`;
+        description.innerText = `Project Description: ${data.project[i].description}`;
         projectData.appendChild(description);
 
         const website = document.createElement('li');
-        website.innerText = `Github: ${project[i].website}`;
+        website.innerText = `Github: ${data.project[i].website}`;
         projectData.appendChild(website);
     }
     // projectData.innerText = 'PORTFOLIO';
