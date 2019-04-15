@@ -1,6 +1,29 @@
-#top_content, #intro, content, #bottom_content {
+/* #top_content, #intro, content, #bottom_content {
     display: flex;
     justify-content: space-evenly;
+} */
+
+body{
+    display: flex;
+    
+}
+
+#left{
+width: 175vh;
+background-color: orange;
+
+}
+
+#right{
+width: 500vh;
+}
+
+.profile-picture{
+width: 120px; height: 120px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
 }
 
 
