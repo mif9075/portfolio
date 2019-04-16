@@ -6,16 +6,23 @@
 body{
     display: flex;
     
+    
 }
 
 #left{
-width: 175vh;
+/* display: flex; */
 background-color: orange;
+text-align: center;
+width: 125vh;
+/* position: fixed; */
 
 }
 
 #right{
-width: 500vh;
+display: flex;
+/* width: 500vh; */
+/* position: absolute; */
+flex-direction: column;
 }
 
 .profile-picture{

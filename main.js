@@ -6,7 +6,7 @@ let isPortfolio = false;
 //Function to Initialize
 function init() {
 
-    addClick('#toggle', togglePortfolioandExp);
+    // addClick('#toggle', togglePortfolioandExp);
 
     displayBio();
     displayIntro();
@@ -24,6 +24,8 @@ function init() {
     for (let i = 0; i < data.experience.length; i++) {
         displayExperience(data.experience[i]);
     }
+
+    displayPortfolio();
 
 }
 
@@ -234,7 +236,7 @@ function displayPortfolio() {
 
     for (let i = 0; i < data.project.length; i++) {
 
-        const projectUl = document.querySelector('#language');
+        const projectUl = document.querySelector('#project');
         
         const projectData = document.createElement('ul');
         projectUl.appendChild(projectData);
